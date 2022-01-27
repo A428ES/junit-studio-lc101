@@ -26,15 +26,15 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]"));
     }
 
-    @Test public void LaunchCodeSingleBracket(){
+    @Test public void launchCodeSingleBracket(){
         assertTrue(BalancedBrackets.hasBalancedBrackets("[LaunchCode]"));
     }
 
-    @Test public void CodeInsideBracket(){
+    @Test public void codeInsideBracket(){
         assertTrue(BalancedBrackets.hasBalancedBrackets("Launch[Code]"));
     }
 
-    @Test public void LaunchCodeRightSide(){
+    @Test public void launchCodeRightSide(){
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]LaunchCode"));
     }
 
@@ -44,19 +44,19 @@ public class BalancedBracketsTest {
 
 
     @Test
-    public void LaunchCodeLeftOpen(){
+    public void launchCodeLeftOpen(){
         assertFalse(BalancedBrackets.hasBalancedBrackets("[LaunchCode"));
     }
 
-    @Test public void LaunchCodeRightOpen(){
+    @Test public void launchCodeRightOpen(){
         assertFalse(BalancedBrackets.hasBalancedBrackets(("Launch]Code")));
     }
 
-    @Test public void LeftOpenSingle(){
+    @Test public void leftOpenSingle(){
         assertFalse(BalancedBrackets.hasBalancedBrackets("["));
     }
 
-    @Test public void ImproperNest(){
+    @Test public void improperNest(){
         assertFalse(BalancedBrackets.hasBalancedBrackets("]["));
     }
 
